@@ -7,7 +7,7 @@ read location < location.txt
 
 echo "Executing git sync..."
 
-cd ${location}
+eval "cd ${location}/${repository}"
 
 eval "git pull https://${token}@github.com/${username}/${repository}"
 
